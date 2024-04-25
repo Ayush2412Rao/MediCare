@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MediCARE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #b8dff3e2;
+            padding: 10px 0;
+        }
+
+        .logo img {
+            max-width: 100px;
+        }
+
+        .navbar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            margin: 0 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #bdcfe3;
+        }
+
+        .about {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #007bff;
+        }
+
+        .team {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .team h2 {
+            color: #007bff;
+            margin-bottom: 40px;
+        }
+
+        .team-member {
+            display: inline-block;
+            margin: 0 20px;
+            vertical-align: top;
+            position: relative;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .member-details {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .team-member:hover .member-details {
+            opacity: 1;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./logo3.jpg" alt="logo">
+            </a>
+            <ul class="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Health Info</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/book">Book Appointment</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2><b>About Us</b></h2>
+                    <p>Welcome to MediCARE, your trusted healthcare provider. We are committed to delivering high-quality medical services to our patients.</p>
+                    <p>Our mission is to provide accessible, affordable, and compassionate healthcare to all individuals, regardless of their background or financial status.</p>
+                    <p>At MediCARE, we believe in putting our patients first. Our team of dedicated healthcare professionals is committed to ensuring your well-being and satisfaction.</p>
+                    <p>We strive to make a positive impact on the health and well-being of our community through comprehensive healthcare services and patient-centered care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <h2><b>Our Team</b></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="./ayush.jpg" alt="Team Member 1" class="img-fluid">
+                        <div class="member-details">
+                            <h3>Mr. Ayush Rao</h3>
+                            <p>Founder & CEO</p>
+                            <p>Mr. Ayush Rao is the visionary leader and driving force behind MediCARE.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="./harsh.jpg" alt="Team Member 2" class="img-fluid">
+                        <div class="member-details">
+                            <h3>Mr. Harsh Rao</h3>
+                            <p>Co-Founder & COO<br>
+                            As the COO of MediCARE, Mr. Harsh Rao oversees the day-to-day operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="./madhav.jpg" alt="Team Member 3" class="img-fluid">
+                        <div class="member-details">
+                            <h3>Mr. Madhav Verma</h3>
+                            <p>Co-Founder & CTO<br>
+                            Mr.Madhav Verma leads the technological development at MediCARE.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&#169; 2024 MediCARE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('header').hover(function() {
+                $(this).css('background-color', '#0056b3');
+            }, function() {
+                $(this).css('background-color', '#82addc');
+            });
+        });
+    </script>
+</body>
+</html>

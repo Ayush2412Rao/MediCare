@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare Patient Reviews</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #5db2d6, #4a6daf); /* Gradient background */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .review-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .review-box {
+            width: calc(33.33% - 20px);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+        }
+
+        .review-box:hover {
+            background-color: #f0f0f0; 
+            transform: scale(1.05); 
+        }
+
+        .review-box h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .review-box p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .good-review {
+            border: 2px solid #4caf50;
+        }
+
+        .bad-review {
+            border: 2px solid #f44336;
+        }
+        footer {
+            background-color: #f8f6f6a9;
+            color: #1a171779;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="bg-white text-grey py-3" style="opacity: 0.5;">
+        <div class="container">
+            <h2 class="text-center mb-0"><b>Patient Reviews for Medicare</b></h2>
+        </div>
+    </header>
+<div class="container">
+    
+    <div class="review-container">
+       
+        <div class="review-box good-review">
+            <h3>Rakesh Singh</h3>
+            <p>Normally i consult doctors in my town, and they are just not good at all, they have mbbs degree but are not good. dont know how found this app, maybe some ad somewhere - fb maybe. but price is half as price in my town and doctor is much much better. very happy, satisfied. have already recommednded to 3 people in family.</p>
+        </div>
+        <div class="review-box good-review">
+            <h3>Vinod Tiwari</h3>
+            <p>great experience. doctor answered quickly, solved issues, asked many questions to understand my case. i told about past history and thanks for listening to it so patiently. among doctors this is difficult to find - patience to listen to earlier history. so thanks. very happy. ill let you know about progress.</p>
+        </div>
+        <div class="review-box bad-review">
+            <h3>Ansh Choudhary</h3>
+            <p>After the product is sold to us it's absolutely no product support from the company. Calls no reply, email NO response.. No trainings given. Over that company sends new sales person requesting us to enroll on to another Plan by paying additional two Lakhs.</p>
+        </div>
+        <div class="review-box bad-review">
+            <h3>Vikas Thakur</h3>
+            <p>Not satisfied with the booking method of this website as it serves to some parts of some areas of an area only.</p>
+        </div>
+        <div class="review-box good-review">
+            <h3>Md Ahsan Sheikh</h3>
+            <p>Very helpful doc. nice to come across doctors who are willing to give time to patients to explain everything in detail. and when i came back again on 2nd day with some doubts dr helped without any additional charges. so thanks and i have already recommeded to my close friends.</p>
+        </div>
+        <div class="review-box good-review">
+            <h3>Aakash Gupta</h3>
+            <p>I had been to an offline doctor in indira nagar, and he gave me 3 strong medicines for my problems. i became even more sick since they were too strong for me. but thank you so much doctor i feel much better. i will defintely consult you for all my consultations</p>
+        </div>
+        
+        <div class="review-box bad-review">
+            <h3>Pramod Choubey</h3>
+            <p>Shut this website as it helps no one in the required and some times it gives wrong data.Only it creates troubles while we try to find hospitals near us or to book an appointment.</p>
+        </div>
+        <div class="review-box bad-review">
+            <h3>Jignesh Patel</h3>
+            <p>Very Frustating when you try to login sometimes it creates troubles when you really need it for your own usage the developers need to focus on the booking part more.</p>
+        </div>
+        <div class="review-box good-review">
+            <h3>Daksh Shetty</h3>
+            <p>I cant believe m writing a review. Hv to admit am very very impressed. great doctor. kind, freindly, listens wth patience. Diagnosed properly, made me understand and focused on lifestyle changes as opposed to the easy option of giving strong meds. Thansk!</p>
+        </div>
+        <div class="review-box good-review">
+            <h3>Aryan Srivastav</h3>
+            <p>God bless you doctor. you could have spent only 10 minutes to understand my case and then tell me the medicines like many doctors. but even at this late time you had the caring attitude to listen and understand my complex case for 20 minutes and help me.</p>
+        </div>
+        <div class="review-box bad-review">
+            <h3>Hemant Kumar</h3>
+            <p>Going to give a lot of bad reviews regarding this website as it is creating a lot of trouble for me whenever i m trying to amke a appoint using it also the people at the conatct side are not so much helpful.</p>
+        </div>
+        <div class="review-box bad-review">
+            <h3>Faroq Hussain</h3>
+            <p>For sure tell my friends to not use this website as it is not upto the mark as it said so the appoint with the doc did not withstand its time and was changed in the last time.</p>
+        </div>
+    </div>
+</div>
+</div>
+<footer>
+    <p>&copy; 2024 MediCare. All Rights Reserved.</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
